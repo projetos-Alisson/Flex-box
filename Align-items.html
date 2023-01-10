@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 3px solid black;
+            display: flex;
+           
+            
+        }
+
+        .item{
+            background-color: purple;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+      
+        /*Comportamento de coluna; os itens ficaram "impilhados"*/
+        .column{
+            flex-direction: column;
+
+        }
+
+
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item{
+            flex: 0; /*ZERA as propriedades flex */
+           padding: 20px;
+           
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aling items: ROW</h1>
+     
+    <p>center</p>
+
+    <section class="container center">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>stretch</p>
+    
+    <section class="container stretch">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>flex-start</p>
+    
+    <section class="container start">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>flex-end</p>
+    
+    <section class="container end">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>baseline</p>
+    
+    <section class="container baseline">
+        <div class="item"><br>Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+     
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+
+     <!--column-->
+
+
+    <h1>Aling items: COLUMN</h1>
+     
+    <p>center</p>
+
+    <section class="container center column">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>stretch</p>
+    
+    <section class="container stretch column">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>flex-start</p>
+    
+    <section class="container start column">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>flex-end</p>
+    
+    <section class="container end column">
+        <div class="item">Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+       <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+    <p>baseline</p>
+    
+    <section class="container baseline column">
+        <div class="item"><br>Item 1 Lore</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adip</div>      
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti rei</div>
+    </section>
+
+
+    <h2>Item CENTRALIZADO</h2>
+
+    <section class="container central">
+        <div class="item">Sou um item centralizado</div>
+     
+    </section>
+
+    </body>
+</html>

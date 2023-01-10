@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-basis</title>
+    <style>
+        .container{
+            max-width: 300px;
+            display: flex;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: coral;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .fb-auto{
+            flex-basis: auto;
+        }
+
+        .fb-0{
+            flex-basis: 0;
+        }
+        .fb-1{
+            flex-basis: 1;
+        }
+
+        .fb-2{
+            flex-basis: 2;
+        }
+
+       .w100{
+            flex-basis: 100px; /*width: 100px */
+       }
+
+        .g-1{
+            flex-grow: 1;
+        }
+
+        .g-2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <p>basis: <strong>auto</strong></p>
+    <div class="container">
+        <div class="item fb-auto g-1">1</div>
+        <div class="item fb-auto g-1">2</div>
+        <div class="item fb-auto g-1">dsadfsadfd3</div>
+        <div class="item fb-auto g-3">4</div>
+    </div>
+
+
+
+    <p>basis: <strong>0;</strong></p>
+    <div class="container">
+        <div class="item fb-0 g-1">1</div>
+        <div class="item fb-0 g-1">2</div>
+        <div class="item fb-0 g-1">dsadfsadfd3</div>
+        <div class="item fb-0 g-3">4</div>
+    </div>
+    
+
+
+    <p>basis:<strong> 1</strong></p>
+    <div class="container">
+        <div class="item fb-1 g-1">1</div>
+        <div class="item fb-1 g-1">2</div>
+        <div class="item fb-1 g-1">dsadfsadfd3</div>
+        <div class="item fb-1 g-3">4</div>
+    </div>
+
+    <p>basis:<strong> 2</strong></p>
+    <div class="container">
+        <div class="item fb-2 g-1">1</div>
+        <div class="item fb-2 g-1">2</div>
+        <div class="item fb-2 g-1">dsadfsadfd3</div>
+        <div class="item fb-2 g-3">4</div>
+    </div>
+
+    <p>basis + width</p>
+    <div class="container">
+        <div class="item w100 g-1">1</div>
+        <div class="item w100 g-1">2</div>
+        <div class="item w100 g-1">dsadfsadfd3</div>
+        <div class="item w100 g-3">4</div>
+    </div>
+
+</body>
+</html>

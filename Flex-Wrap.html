@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid rgb(255, 129, 150);
+            max-width: 300px;
+            
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 60px;
+            
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .red{
+            background-color: rgb(161, 18, 18);
+        }
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+
+    <div class="flex-container"> <!--no-wrap é um valor padrão do container, então colocá-lo não fará diferença-->
+        <div class="class item red">1</div>
+        <div class="class item green">2</div>
+        <div class="class item blue">3</div>
+    </div>
+
+    <h1>wrap</h1>
+    
+    <div class="flex-container wrap">
+        <div class="class item red">1</div>
+        <div class="class item green">2</div>
+        <div class="class item blue">3</div>
+        <div class="class item red">4</div> 
+    </div>
+    
+    <h1>wrap reverse</h1>
+    
+    <div class="flex-container wrap-reverse">
+        <div class="class item red">1</div>
+        <div class="class item green">2</div>
+        <div class="class item blue">3</div>
+        <div class="class item red">4</div> 
+    </div>
+
+</body>
+</html>

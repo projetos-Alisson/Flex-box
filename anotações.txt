@@ -1,0 +1,22 @@
+
+
+Flex Container
+
+
+flex-wrap: Define se os itens quebraram a linha
+nowrap: Não permite quebra (os elementos podem vazar); é um funcionamento padrão dos containers
+wrap: Permite quebra de linha quando um dos itens não caberem na mesma linha
+wrap-reverse: quebra de linha na direção contrária;
+
+flex-flow: flex-direction flex-wrap; (atalho)
+
+
+Align Items
+
+-Alinha os itens filhos de acordo com o container
+-Alinhamento diferente quando for ROW e COLUMN
+-Alinhamento central no eixo vertical
+-No justify-content, é necessário especificar a altura no container, para poder trabalhar o ALINHAMENTO;
+- no align items não é preciso;
+
+
